@@ -1,40 +1,24 @@
 # CRUD_Microservice
 Made with Go and Reddis
 
-# Go (Golang)
+# Chi
 
 ## Introduction
 
 <p>
-  Go (also known as Golang) is a statically typed, compiled programming language designed for simplicity, efficiency, and ease of use. It was created at Google by Robert Griesemer, Rob Pike, and Ken Thompson and first released in 2009. Go was designed with a focus on concurrent and multicore programming, and it aims to provide a modern alternative to C and C++ while addressing common issues related to complexity and performance. Here's an overview of how Go works:
+Chi is a lightweight, fast, and highly flexible multiplexer (or router) for building HTTP services and APIs in the Go programming language. It is an external package in Go and is often used as an alternative to the built-in net/http package's ServeMux for routing and middleware handling. Chi provides a set of features and capabilities for building robust and efficient HTTP services. Some key features and characteristics of Chi include:
 
-### Code Structure:
+### Lightweight and Fast: Chi is designed to be lightweight and high-performance. It's optimized for minimal overhead and can route requests quickly.
 
-Go code is organized into packages. A package is a collection of Go source files in the same directory that work together to provide a set of related functionalities. Go's standard library is a rich collection of packages for various tasks.
-### Syntax:
+### Modular and Extensible: Chi is highly modular, allowing developers to compose and customize their routers and middleware easily. It supports middleware chaining and flexible routing patterns.
 
-Go has a relatively simple and clean syntax, inspired by C, but it omits many features found in C and C++ that can lead to complexity and errors.
-It uses explicit declaration of types, and variables must be used. Unnecessary code is not allowed.
-Concurrency:
+### Context Handling: Chi uses a context package for managing request-specific data and values, making it easy to pass data between middleware and request handlers.
 
-One of Go's most significant features is goroutines, which are lightweight, concurrent threads of execution. You can create goroutines easily, making concurrent programming more accessible.
-Go also provides channels, which allow goroutines to communicate and synchronize their execution. This makes it easier to implement concurrent and parallel programs.
-Memory Management:
+### Param Handling: Chi provides a convenient and powerful mechanism for handling URL parameters, such as route segments and query parameters.
 
-Go has a garbage collector that automatically manages memory allocation and deallocation, reducing the risk of memory leaks and simplifying memory management.
-### Compilation:
+### Middleware: Chi supports middleware for tasks like authentication, logging, and request/response manipulation. Middleware can be easily added to routes and applied in a specific order.
 
-Go programs are statically compiled into machine code. The compilation process generates a single binary executable that can be easily deployed to different platforms without the need for external dependencies.
-### Standard Library:
+### Routing: Chi provides powerful routing capabilities, supporting complex route patterns, route groups, and subrouters.
 
-Go has a rich and extensive standard library that includes packages for handling various tasks, such as networking, file I/O, cryptography, and more. The standard library is well-documented and plays a significant role in the language's success.
-### Concurrency Control:
-
-Go has built-in mechanisms for controlling concurrency and synchronization, such as mutexes and the sync package. These tools help manage shared resources and protect against data races.
-### Cross-Platform Support:
-
-Go was designed to be cross-platform from the beginning. You can write Go code on one platform and easily compile it for others without modification, making it an excellent choice for building cross-platform applications.
-### Tools:
-
-Go comes with a comprehensive set of development tools, including go build, go run, go test, and go fmt. These tools simplify the development process, making Go a productive language.
+### Clean API Design: Chi's API is designed to be clear and intuitive, making it easy for developers to understand and work with.
 </p>
